@@ -1,0 +1,100 @@
+# ===========================
+# PPE Detection Project - .gitignore
+# ===========================
+
+# --- Python Virtual Environment ---
+venv/
+env/
+.env/
+ENV/
+
+# --- Python Cache & Build ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Model Weight Files (Large Binary Files) ---
+# These should be downloaded separately. See README for instructions.
+*.pt
+*.pth
+*.weights
+*.h5
+*.hdf5
+*.pb
+*.onnx
+*.tflite
+
+# --- Biometric / Sensitive Data ---
+# face_encodings.pkl contains real face data - NEVER commit this
+face_encodings.pkl
+*.pkl
+
+# --- Video Files (Large) ---
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.flv
+
+# --- Audio Files ---
+*.wav
+*.mp3
+
+# --- Dataset / Image Archives ---
+*.zip
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
+
+# --- Dataset Directories (Large) ---
+Master_Dataset/
+Master_Dataset_zip.zip
+dataset_spices/
+dataset_tools/
+dataset_veg/
+new_training_images/
+known_faces/
+
+# --- YOLOv5 Training Runs & Results ---
+runs/
+yolov5-master/
+
+# --- Salesforce / SFDX (Unrelated to project) ---
+.sfdx/
+
+# --- Jupyter Notebook Checkpoints ---
+.ipynb_checkpoints/
+
+# --- Environment Variables ---
+.env
+.env.local
+.env.production
+
+# --- IDE and Editor Files ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- OS Files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Temporary Files ---
+*.tmp
+*.temp
